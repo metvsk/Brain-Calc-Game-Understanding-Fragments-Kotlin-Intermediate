@@ -1,10 +1,14 @@
 package com.chillandcode.oparator_fragments_kotlin
 
+import android.app.Activity
+import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.TextView.OnEditorActionListener
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -84,8 +88,12 @@ class GameFragment : Fragment() {
     private fun reloadRemainingCounter() {
         when {
             viewModel.getCounter() > 0 -> binding.remainingTV.text = viewModel.getCounter().toString()
-            viewModel.getScore() == 10 -> findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
-            else -> findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment)
+            viewModel.getScore() == 10 ->{ findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
+                view?.hideKeyboard()
+            }
+            else -> {findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment)
+                view?.hideKeyboard()
+            }
         }
     }
 
@@ -110,5 +118,10 @@ class GameFragment : Fragment() {
             Color.WHITE,
             null
         )
+    }
+
+    fun View.hideKeyboard() {
+        val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(windowToken, 0)
     }
 }

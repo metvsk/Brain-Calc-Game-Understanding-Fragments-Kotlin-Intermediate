@@ -6,14 +6,22 @@
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.134375" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/drawable-v24/snack_corner.xml" value="0.134375" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/drawable-v24/snack_warn_corner.xml" value="0.134375" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23229166666666667" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/drawable/snack_background.xml" value="0.134375" />
-        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/activity_main.xml" value="0.2609375" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_about.xml" value="0.13489583333333333" />
-        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_game.xml" value="0.2" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_game.xml" value="0.264" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_game_over.xml" value="0.264" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_game_won.xml" value="0.264" />
-        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_rules.xml" value="0.13489583333333333" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_rules.xml" value="0.2" />
         <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/fragment_title_screen.xml" value="0.13489583333333333" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/nav_drawer_menu.xml" value="0.21614583333333334" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/layout/nav_header.xml" value="0.20989583333333334" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/menu/menu.xml" value="0.21614583333333334" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/menu/nav_drawer_menu.xml" value="0.2453125" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/menu/navdrawer_menu.xml" value="0.21614583333333334" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.23229166666666667" />
+        <entry key="..\:/MyFiles/androiddevelopment/WorkingProjects/OparatorFragmentsKotlin/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/metvs/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/auto_complete_list.xml" value="0.11822916666666666" />
       </map>
     </option>

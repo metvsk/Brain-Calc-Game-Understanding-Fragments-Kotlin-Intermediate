@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.chillandcode.oparator_fragments_kotlin.databinding.FragmentGameOverBinding
 
 class GameOverFragment : Fragment() {
@@ -16,6 +17,11 @@ class GameOverFragment : Fragment() {
     ): View {
 
         binding = FragmentGameOverBinding.inflate(layoutInflater)
+        binding.retryButton.setOnClickListener{
+            findNavController().navigate(R.id.action_gameOverFragment_to_gameFragment)
+        }
+
+
         return binding.root
 
 
