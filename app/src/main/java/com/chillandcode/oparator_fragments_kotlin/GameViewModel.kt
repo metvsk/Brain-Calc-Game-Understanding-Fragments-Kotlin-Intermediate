@@ -7,10 +7,11 @@ import java.math.RoundingMode
 import java.text.DecimalFormat
 
 class GameViewModel : ViewModel() {
-    private var counter:Int=10
-    private var score:Int=0
+    private var counter: Int = 10
+    private var score: Int = 0
     private var result: Float = 0.0F
     private var question: String = ""
+
     init {
         generateQuestion()
     }
@@ -26,10 +27,19 @@ class GameViewModel : ViewModel() {
         val y = IntRange(1, 10).random()
         val operator = getRandomOperator()
         question = "Solve $x $operator $y "
-        result=
-        roundOffDecimal(getResult(operator, x.toFloat(), y.toFloat()))
+        result =
+            roundOffDecimal(getResult(operator, x.toFloat(), y.toFloat()))
 
-        Log.i(TAG, "generateQuestion: $question result: $result  before round ${getResult(operator, x.toFloat(), y.toFloat())}")
+        Log.i(
+            TAG,
+            "generateQuestion: $question result: $result  before round ${
+                getResult(
+                    operator,
+                    x.toFloat(),
+                    y.toFloat()
+                )
+            }"
+        )
         return question
     }
 
@@ -52,21 +62,20 @@ class GameViewModel : ViewModel() {
     }
 
     private fun getRandomOperator(): Char {
-//        val limit = OPERATOR.values().size - 1
-//        return OPERATOR.values()[IntRange(0, limit).random()].symbol
-
-        return '+'
+        val limit = OPERATOR.values().size - 1
+        return OPERATOR.values()[IntRange(0, limit).random()].symbol
     }
 
     fun getQuestion(): String {
         return question
     }
-    fun getCounter():Int{
+
+    fun getCounter(): Int {
         return counter
     }
 
     fun getScore(): Int {
-        return   score;
+        return score;
     }
 
     fun addPoint() {
@@ -80,7 +89,8 @@ class GameViewModel : ViewModel() {
     fun reducePoint() {
         score--
     }
-    private fun roundOffDecimal(number: Float):Float {
+
+    private fun roundOffDecimal(number: Float): Float {
         val df = DecimalFormat("#.##")
         df.roundingMode = RoundingMode.FLOOR
         return df.format(number).toFloat()
