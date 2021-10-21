@@ -4,7 +4,7 @@
 <br>
 Using <br>
 => Kotlin <br>
-=> Implicit intent for share scores <br>
+=> Implicit intent to share scores <br>
 => Model View View-Model (mvvm - architecture)<br>
 => View Binding<br>
 => Fragments<br>
