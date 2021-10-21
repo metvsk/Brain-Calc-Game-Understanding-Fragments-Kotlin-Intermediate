@@ -14,6 +14,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.chillandcode.oparator_fragments_kotlin.databinding.FragmentGameBinding
 import com.google.android.material.snackbar.Snackbar
+import java.math.RoundingMode
+import java.text.DecimalFormat
 
 
 class GameFragment : Fragment() {
@@ -29,9 +31,11 @@ class GameFragment : Fragment() {
         binding = FragmentGameBinding.inflate(layoutInflater)
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
         updateQuestion()
+
         binding.skipButton.setOnClickListener {
             viewModel.generateQuestion()
             viewModel.reduceCounter()
+            binding.answer.text.clear()
             reloadRemainingCounter()
             updateQuestion()
         }
@@ -53,7 +57,7 @@ class GameFragment : Fragment() {
                 try {
 
                     val input: Float = binding.answer.text.toString().toFloat()
-                    if (viewModel.getResult() == input) {
+                    if (viewModel.getResult()== input) {
                         snackIt(view, "Correct Answer", false)
                         viewModel.addPoint()
                         viewModel.reduceCounter()
@@ -124,4 +128,5 @@ class GameFragment : Fragment() {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(windowToken, 0)
     }
+
 }

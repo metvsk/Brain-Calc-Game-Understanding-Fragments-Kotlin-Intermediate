@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.TitleFragment"
-        android:label="fragment_title_screen"
-        tools:layout="@layout/fragment_title_screen" >
+        android:label="Home"
+        tools:layout="@layout/fragment_title_screen">
         <action
             android:id="@+id/action_titleFragment_to_gameFragment"
             app:destination="@id/gameFragment"
@@ -19,8 +19,8 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.GameFragment"
-        android:label="fragment_game"
-        tools:layout="@layout/fragment_game" >
+        android:label="Brain Calc"
+        tools:layout="@layout/fragment_game">
         <action
             android:id="@+id/action_gameFragment_to_gameWonFragment"
             app:destination="@id/gameWonFragment"
@@ -33,8 +33,8 @@
     <fragment
         android:id="@+id/gameOverFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.GameOverFragment"
-        android:label="fragment_game_over"
-        tools:layout="@layout/fragment_game_over" >
+        android:label="Game Over"
+        tools:layout="@layout/fragment_game_over">
         <action
             android:id="@+id/action_gameOverFragment_to_gameFragment"
             app:destination="@id/gameFragment"
@@ -44,8 +44,8 @@
     <fragment
         android:id="@+id/gameWonFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.GameWonFragment"
-        android:label="fragment_game_won"
-        tools:layout="@layout/fragment_game_won" >
+        android:label="Winner"
+        tools:layout="@layout/fragment_game_won">
         <action
             android:id="@+id/action_gameWonFragment_to_gameFragment"
             app:destination="@id/gameFragment"
@@ -55,11 +55,11 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.AboutFragment"
-        android:label="fragment_about"
+        android:label="About"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/rulesFragment"
         android:name="com.chillandcode.oparator_fragments_kotlin.RulesFragment"
-        android:label="fragment_rules"
+        android:label="Rules"
         tools:layout="@layout/fragment_rules" />
 </navigation>

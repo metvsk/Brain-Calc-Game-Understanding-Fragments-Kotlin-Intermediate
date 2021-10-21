@@ -3,6 +3,8 @@ package com.chillandcode.oparator_fragments_kotlin
 import android.content.ContentValues.TAG
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import java.math.RoundingMode
+import java.text.DecimalFormat
 
 class GameViewModel : ViewModel() {
     private var counter:Int=10
@@ -24,8 +26,10 @@ class GameViewModel : ViewModel() {
         val y = IntRange(1, 10).random()
         val operator = getRandomOperator()
         question = "Solve $x $operator $y "
-        result=getResult(operator, x.toFloat(), y.toFloat())
-        Log.i(TAG, "generateQuestion: $question")
+        result=
+        roundOffDecimal(getResult(operator, x.toFloat(), y.toFloat()))
+
+        Log.i(TAG, "generateQuestion: $question result: $result  before round ${getResult(operator, x.toFloat(), y.toFloat())}")
         return question
     }
 
@@ -48,8 +52,10 @@ class GameViewModel : ViewModel() {
     }
 
     private fun getRandomOperator(): Char {
-        val limit = OPERATOR.values().size - 1
-        return OPERATOR.values()[IntRange(0, limit).random()].symbol
+//        val limit = OPERATOR.values().size - 1
+//        return OPERATOR.values()[IntRange(0, limit).random()].symbol
+
+        return '+'
     }
 
     fun getQuestion(): String {
@@ -73,5 +79,10 @@ class GameViewModel : ViewModel() {
 
     fun reducePoint() {
         score--
+    }
+    private fun roundOffDecimal(number: Float):Float {
+        val df = DecimalFormat("#.##")
+        df.roundingMode = RoundingMode.FLOOR
+        return df.format(number).toFloat()
     }
 }
