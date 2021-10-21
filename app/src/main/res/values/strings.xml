@@ -2,4 +2,5 @@
     <string name="app_name">Brain Calc</string>
     <string name="rules">Do not round\nIn case of fraction answer only two numbers after decimals \nif 1.28562212 answer 1.28\n 1 point for correct answer \n -1 for wrong \n Score 10 out of 10 to win the game…</string>
     <string name="about">Hi,\n My name is Vishnu… \n I am a programmer\n I love finding solutions to existing problems faced by peoples… Being able to help peoples is what I love doing… find me on twitter,facebook,linked in,Git hub @metvsk handle</string>
+    <string name="share_success_text">Hey recently played this math calculator game called Brain Calc I scored :</string>
 </resources>

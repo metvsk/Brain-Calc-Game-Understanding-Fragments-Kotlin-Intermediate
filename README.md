@@ -4,9 +4,11 @@
 <br>
 Using <br>
 => Kotlin <br>
+=> Implicit intent for share scores <br>
 => Model View View-Model (mvvm - architecture)<br>
 => View Binding<br>
 => Fragments<br>
+
 => Back Stack<br>
 => App drawer<br>
 => Options Menu<br>
@@ -25,4 +27,5 @@ screenShots
   <img src="/screenshots/4.jpg" width="200px"</img>
   <img src="/screenshots/5.jpg" width="200px"</img>
   <img src="/screenshots/6.jpg" width="200px"</img>
+  <img src="/screenshots/share.gif" width="200px"</img>
 </div>
