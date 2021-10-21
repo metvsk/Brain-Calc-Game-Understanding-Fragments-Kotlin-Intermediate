@@ -17,13 +17,12 @@ class GameOverFragment : Fragment() {
     ): View {
 
         binding = FragmentGameOverBinding.inflate(layoutInflater)
+        val args=GameWonFragmentArgs.fromBundle(requireArguments())
+        val text ="${args.score} / 10"
+        binding.score.text = text
         binding.retryButton.setOnClickListener{
-            findNavController().navigate(R.id.action_gameOverFragment_to_gameFragment)
+            findNavController().navigate(GameOverFragmentDirections.actionGameOverFragmentToGameFragment())
         }
-
-
         return binding.root
-
-
     }
 }

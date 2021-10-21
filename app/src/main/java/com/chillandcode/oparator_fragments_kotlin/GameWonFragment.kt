@@ -15,11 +15,14 @@ class GameWonFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding=FragmentGameWonBinding.inflate(layoutInflater)
+        val binding = FragmentGameWonBinding.inflate(layoutInflater)
+
+
         binding.button.setOnClickListener {
-            findNavController().navigate(R.id.action_gameWonFragment_to_gameFragment)
+            findNavController().navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+
         }
-        return  binding.root
+        return binding.root
     }
 
 }

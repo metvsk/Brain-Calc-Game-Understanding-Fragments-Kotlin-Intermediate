@@ -1,6 +1,5 @@
 package com.chillandcode.oparator_fragments_kotlin
 
-import android.app.Activity
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
@@ -8,14 +7,11 @@ import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView.OnEditorActionListener
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.chillandcode.oparator_fragments_kotlin.databinding.FragmentGameBinding
 import com.google.android.material.snackbar.Snackbar
-import java.math.RoundingMode
-import java.text.DecimalFormat
 
 
 class GameFragment : Fragment() {
@@ -57,7 +53,7 @@ class GameFragment : Fragment() {
                 try {
 
                     val input: Float = binding.answer.text.toString().toFloat()
-                    if (viewModel.getResult()== input) {
+                    if (viewModel.getResult() == input) {
                         snackIt(view, "Correct Answer", false)
                         viewModel.addPoint()
                         viewModel.reduceCounter()
@@ -91,11 +87,15 @@ class GameFragment : Fragment() {
 
     private fun reloadRemainingCounter() {
         when {
-            viewModel.getCounter() > 0 -> binding.remainingTV.text = viewModel.getCounter().toString()
-            viewModel.getScore() == 10 ->{ findNavController().navigate(R.id.action_gameFragment_to_gameWonFragment)
+            viewModel.getCounter() > 0 -> binding.remainingTV.text =
+                viewModel.getCounter().toString()
+            viewModel.getScore() == 10 -> {
+                findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(viewModel.getScore()))
+
                 view?.hideKeyboard()
             }
-            else -> {findNavController().navigate(R.id.action_gameFragment_to_gameOverFragment)
+            else -> {
+                findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment(viewModel.getScore()))
                 view?.hideKeyboard()
             }
         }

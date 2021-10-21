@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.chillandcode.oparator_fragments_kotlin.databinding.ActivityMainBinding
 
@@ -21,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
         NavigationUI.setupWithNavController(binding.navView, navController)
     }
+
     override fun onSupportNavigateUp(): Boolean {
 
         val navController = this.findNavController(R.id.navHostFragment)
