@@ -2,6 +2,7 @@
 #Brain Calc
 # Calc-Game-Understanding-Fragments-Kotlin-Intermediate
 <br>
+Using <br>
 => Kotlin <br>
 => Model View View-Model (mvvm - architecture)<br>
 => View Binding<br>
