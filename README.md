@@ -7,6 +7,7 @@ Using <br>
 => Model View View-Model (mvvm - architecture)<br>
 => View Binding<br>
 => Fragments<br>
+=> Safe Args Plugin for transfer of data between fragments<br>
 => Back Stack<br>
 => App drawer<br>
 => Options Menu<br>
