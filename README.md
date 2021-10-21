@@ -2,16 +2,16 @@
 #Brain Calc
 # Calc-Game-Understanding-Fragments-Kotlin-Intermediate
 <br>
-=> Kotlin 
-=> Model View View-Model (mvvm - architecture)
-=> View Binding
-=> Fragments
-=> Back Stack
-=> App drawer
-=> Options Menu
-=> Custom Snackbar
-=> Input method manager
-
+=> Kotlin <br>
+=> Model View View-Model (mvvm - architecture)<br>
+=> View Binding<br>
+=> Fragments<br>
+=> Back Stack<br>
+=> App drawer<br>
+=> Options Menu<br>
+=> Custom Snackbar<br>
+=> Input method manager<br>
+<br>
 
 Understanding fragments by Android Trivia App provided by google seemed to be pretty basic and I was not actually getting results... so started a new project created my own fragments and view models... Added some custom snack bar and basic game functions... it's pretty now
 
