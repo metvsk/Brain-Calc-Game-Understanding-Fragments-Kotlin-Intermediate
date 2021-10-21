@@ -5,9 +5,9 @@ Understanding fragments by Android Trivia App provided by google seemed to be pr
 screenShots
 <hr>
 <div align="center">
-  <img src="/screenshots/1" width="200px"</img>
-  <img src="/screenshots/2" width="200px"</img>
-  <img src="/screenshots/3" width="200px"</img>
-  <img src="/screenshots/4" width="200px"</img>
-  <img src="/screenshots/5" width="200px"</img>
+  <img src="/screenshots/1.jpg" width="200px"</img>
+  <img src="/screenshots/2.jpg" width="200px"</img>
+  <img src="/screenshots/3.jpg" width="200px"</img>
+  <img src="/screenshots/4.jpg" width="200px"</img>
+  <img src="/screenshots/5.jpg" width="200px"</img>
 </div>
